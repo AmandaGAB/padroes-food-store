@@ -5,7 +5,7 @@ public class PaymentService {
     public PaymentService(){};
 
     public void doPayment(PaymentStrategy paymentStrategy) throws Exception{
-        paymentStrategy.doPayment();
+        paymentStrategy.doPayment() ;
     };
 
 
