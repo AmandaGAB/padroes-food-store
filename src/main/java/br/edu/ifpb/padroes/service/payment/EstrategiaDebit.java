@@ -1,6 +1,6 @@
 package br.edu.ifpb.padroes.service.payment;
 
-public class EstrategiaDebit {
+public class EstrategiaDebit implements PaymentStrategy{
 
         
     public void doPayment() throws Exception {

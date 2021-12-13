@@ -1,11 +1,14 @@
 package br.edu.ifpb.padroes.service.payment;
 
-public interface PaymentService {
+public class PaymentService {
+
+    public PaymentService(){};
 
 
 
-
-    public void doPayment() throws Exception;
+    public void doPayment(PaymentStrategy paymentStrategy) throws Exception{
+        paymentStrategy.doPayment();
+    };
 
 
 
