@@ -13,4 +13,8 @@ public class Order {
     public void canceled() {
 		this.estadoAtual = (OrderState) estadoAtual.CANCELED();
 	}
+
+  public void payment_refused() {
+		this.estadoAtual = (OrderState) estadoAtual.PAYMENT_REFUSED();
+	}
 }

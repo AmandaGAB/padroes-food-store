@@ -11,15 +11,16 @@ public enum OrderStateEnum implements OrderState{
 			return null;
 		}
 
-		public OrderState PAYMENT_REFUSED() {
-			System.out.println("!");
-			return null;
-		}
+		
 	},
 
 	CANCELED {
 		public OrderState CANCELED() {
 			System.out.println("Cancelado!");
+			return null;
+		}
+		public OrderState PAYMENT_REFUSED() {
+			System.out.println("!");
 			return null;
 		}
     }
