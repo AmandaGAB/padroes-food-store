@@ -1,12 +1,21 @@
 package br.edu.ifpb.padroes.service.payment;
 
-public class PaymentService {
+public interface PaymentService {
 
+
+
+
+    public void doPayment() throws Exception;
+
+
+
+
+/* 
     public enum PaymentType {
         CREDIT_CARD, DEBIT, BILLET, PAYPAL
-    }
+    } */
 
-    public void doPayment(PaymentType type) throws Exception {
+   /*  public void doPayment(PaymentType type) throws Exception {
         switch (type) {
             case CREDIT_CARD:
                 System.out.println("Do credit card payment!");
@@ -26,6 +35,6 @@ public class PaymentService {
 
 
 
-    }
+    } */
 
 }
